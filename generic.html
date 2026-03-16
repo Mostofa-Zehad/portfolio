@@ -1,105 +1,132 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Academic Background - Kazi Zehad Mostofa</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <style>
-    body, p, li, h2, h3 {
-      color: black;
-    }
-    .card-3d {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      padding: 2rem;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-bottom: 2rem;
-    }
-    .card-3d:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
-    }
-    .image-fit {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-    }
-  </style>
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Details — Kazi Zehad Mostofa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Portfolio CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
-<body class="is-preload">
+<body>
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="title">Educational Background</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html" class="active">Education</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Kazi Zehad Mostofa</a>
+      <div class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
 
-  <!-- Wrapper -->
-  <div id="wrapper">
+  <div class="page-wrapper">
 
-    <!-- Main -->
-    <section id="main" class="wrapper">
-      <div class="inner">
-      <h1 class="major" style="color: #006400; text-align: center;">🎓 Academic Details 🎓</h1>
+    <div class="project-hero">
+      <div class="container">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+        <span class="project-hero-tag">Academic Background</span>
+        <h1>Academic Details</h1>
+        <p class="project-hero-tagline">Educational background and academic achievements of Kazi Zehad Mostofa</p>
+      </div>
+    </div>
 
-        <div class="card-3d">
-          <img src="images/pic04.png" alt="PhD Education" class="image-fit" />
-          <h2>PhD in Electrical and Computer Engineering</h2>
-          <p>Clarkson University, Potsdam, New York, USA<br/>2024 – Present</p>
-          <h3>Power and Renewable Energy Engineering</h3>
-          <ul>
-            <li>Research: Microgrid Optimization and Economic Dispatch for Tok, Alaska</li>
-            <li>Partners: U.S. Department of Energy (DOE) and GE Vernova</li>
-            <li>Objective: Developing resilient and cost-efficient energy systems for remote areas</li>
-            <li>Advisor: Dr. Leo Yazhou Jiang</li>
-          </ul>
-        </div>
+    <div class="project-content">
+      <div class="container">
 
-        <div class="card-3d">
-          <img src="images/pic03a.png" alt="Bachelor Education" class="image-fit" />
-          <h2>Bachelor in Electrical and Computer Engineering</h2>
-          <p>University of Malaya, Kuala Lumpur, Malaysia<br/>2018 – 2022</p>
-          <h3>Power and Energy</h3>
-          <ul>
-            <li>Final Year Project: Development of IoT-based live monitoring system for solar PV plants</li>
-            <li>Grant: University of Malaya Research Grant (RMF0423-2021)</li>
-            <li>Design Project: IoT-integrated ICU patient monitoring with alert system</li>
-            <li>Advisor: Dr. Mohammad Aminul Islam</li>
-          </ul>
+        <div class="edu-page-grid">
+
+          <!-- PhD Card -->
+          <div class="edu-card fade-in">
+            <span class="edu-badge">PhD</span>
+            <div class="edu-degree">PhD in Electrical and Computer Engineering</div>
+            <div class="edu-focus">Power and Renewable Energy Engineering</div>
+            <div class="edu-school">
+              <i class="fa-solid fa-building-columns" style="color:var(--accent);margin-right:0.4rem;"></i>
+              Clarkson University, Potsdam, New York, USA
+            </div>
+            <div class="edu-period">
+              <i class="fa-regular fa-calendar" style="margin-right:0.4rem;"></i>2024 – Present
+            </div>
+            <div class="edu-details">
+              <ul>
+                <li>Research: Microgrid Optimization and Economic Dispatch for Tok, Alaska</li>
+                <li>Partners: U.S. Department of Energy (DOE) and GE Vernova</li>
+                <li>Objective: Developing resilient and cost-efficient energy systems for remote areas</li>
+                <li>Advisor: Dr. Leo Yazhou Jiang</li>
+              </ul>
+            </div>
+            <div style="margin-top:1.5rem;">
+              <img src="images/pic04.png" alt="Clarkson University" style="border-radius:var(--radius-sm);border:1px solid var(--border);max-width:100%;" />
+            </div>
+          </div>
+
+          <!-- BS Card -->
+          <div class="edu-card fade-in">
+            <span class="edu-badge">BS</span>
+            <div class="edu-degree">Bachelor in Electrical and Computer Engineering</div>
+            <div class="edu-focus">Power and Energy</div>
+            <div class="edu-school">
+              <i class="fa-solid fa-building-columns" style="color:var(--accent);margin-right:0.4rem;"></i>
+              University of Malaya, Kuala Lumpur, Malaysia
+            </div>
+            <div class="edu-period">
+              <i class="fa-regular fa-calendar" style="margin-right:0.4rem;"></i>2018 – 2022
+            </div>
+            <div class="edu-details">
+              <ul>
+                <li>Final Year Project: Development of IoT-based live monitoring system for solar PV plants</li>
+                <li>Grant: University of Malaya Research Grant (RMF0423-2021)</li>
+                <li>Design Project: IoT-integrated ICU patient monitoring with alert system</li>
+                <li>Advisor: Dr. Mohammad Aminul Islam</li>
+              </ul>
+            </div>
+            <div style="margin-top:1.5rem;">
+              <img src="images/pic03a.png" alt="University of Malaya" style="border-radius:var(--radius-sm);border:1px solid var(--border);max-width:100%;" />
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section>
+    </div>
 
   </div>
 
-  <!-- Footer -->
-  <footer id="footer" class="wrapper alt">
-    <div class="inner">
-      <ul class="menu">
-        <li>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</li>
-        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-      </ul>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>

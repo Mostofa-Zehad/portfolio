@@ -1,125 +1,202 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Skills - Kazi Zehad Mostofa</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Demonstration — Kazi Zehad Mostofa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Portfolio CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
-<body class="is-preload">
+<body>
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="title">Skills & Certifications </a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Back</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Kazi Zehad Mostofa</a>
+      <div class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
 
-  <!-- Wrapper -->
-  <div id="wrapper">
+  <div class="page-wrapper">
 
-    <!-- Main -->
-    <section id="main" class="wrapper">
-      <div class="inner">
-        <h1 class="major" style="text-align: center;">Skill Demonstration</h1>
+    <div class="project-hero">
+      <div class="container">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+        <span class="project-hero-tag">Expertise</span>
+        <h1>Skill Demonstration</h1>
+        <p class="project-hero-tagline">Technical skills, tools, software, and certifications across energy, data science, and engineering domains</p>
+      </div>
+    </div>
 
-        <div class="features">
-          <section>
-            <span class="icon solid major fa-code"></span>
-            <h3>Programming Languages</h3>
-            <p>Python, C, C++, MATLAB, HTML</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-cogs"></span>
-            <h3>Application Software</h3>
-            <p>PSCAD, CYME, OpenDSS, MATLAB, LTSpice, Homer Pro, HelioScope, PowerWorld, PVSyst, Arduino IDE</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-wifi"></span>
-            <h3>Communication Technology</h3>
-            <p>Mosquitto, Wi-Fi, Bluetooth</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-plug"></span>
-            <h3>Peripheral Bus</h3>
-            <p>I2C, USB</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-chart-line"></span>
-            <h3>Data Analysis Tools</h3>
-            <p>NumPy, Pandas, Matplotlib, SciPy, Plotly</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-cloud"></span>
-            <h3>Cloud Platforms</h3>
-            <p>ThingSpeak, Blynk App, IFTTT</p>
-          </section>
-          <section>
-            <span class="icon solid major fa-toolbox"></span>
-            <h3>Other Skills</h3>
-            <p>Global Wind ATLAS, LaTeX, MS Office, Advanced Excel, PowerPoint, Illustrator, Endnote, Zotero, Mendeley</p>
-          </section>
+    <div class="project-content">
+      <div class="container">
+
+        <!-- Technical Skills -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-code"></i>Technical Skills</h2>
+          <div class="skills-grid">
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="skill-card-title">Programming Languages</div>
+              <div class="skill-pills">
+                <span class="skill-pill">Python</span>
+                <span class="skill-pill">C</span>
+                <span class="skill-pill">C++</span>
+                <span class="skill-pill">MATLAB</span>
+                <span class="skill-pill">HTML</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-cogs"></i></div>
+              <div class="skill-card-title">Application Software</div>
+              <div class="skill-pills">
+                <span class="skill-pill">PSCAD</span>
+                <span class="skill-pill">CYME</span>
+                <span class="skill-pill">OpenDSS</span>
+                <span class="skill-pill">MATLAB</span>
+                <span class="skill-pill">LTSpice</span>
+                <span class="skill-pill">Homer Pro</span>
+                <span class="skill-pill">HelioScope</span>
+                <span class="skill-pill">PowerWorld</span>
+                <span class="skill-pill">PVSyst</span>
+                <span class="skill-pill">Arduino IDE</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-wifi"></i></div>
+              <div class="skill-card-title">Communication Technology</div>
+              <div class="skill-pills">
+                <span class="skill-pill">Mosquitto</span>
+                <span class="skill-pill">Wi-Fi</span>
+                <span class="skill-pill">Bluetooth</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-plug"></i></div>
+              <div class="skill-card-title">Peripheral Bus</div>
+              <div class="skill-pills">
+                <span class="skill-pill">I2C</span>
+                <span class="skill-pill">USB</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="skill-card-title">Data Analysis Tools</div>
+              <div class="skill-pills">
+                <span class="skill-pill">NumPy</span>
+                <span class="skill-pill">Pandas</span>
+                <span class="skill-pill">Matplotlib</span>
+                <span class="skill-pill">SciPy</span>
+                <span class="skill-pill">Plotly</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-cloud"></i></div>
+              <div class="skill-card-title">Cloud Platforms</div>
+              <div class="skill-pills">
+                <span class="skill-pill">ThingSpeak</span>
+                <span class="skill-pill">Blynk App</span>
+                <span class="skill-pill">IFTTT</span>
+              </div>
+            </div>
+
+            <div class="skill-card fade-in">
+              <div class="skill-card-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <div class="skill-card-title">Other Skills</div>
+              <div class="skill-pills">
+                <span class="skill-pill">Global Wind ATLAS</span>
+                <span class="skill-pill">LaTeX</span>
+                <span class="skill-pill">MS Office</span>
+                <span class="skill-pill">Advanced Excel</span>
+                <span class="skill-pill">PowerPoint</span>
+                <span class="skill-pill">Illustrator</span>
+                <span class="skill-pill">Endnote</span>
+                <span class="skill-pill">Zotero</span>
+                <span class="skill-pill">Mendeley</span>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <h2 style="text-align: left; margin-top: 3em;">Certifications</h2>
-        <hr style="height: 2px; width: 100%; margin: 0 auto 2em auto; border: none; background: linear-gradient(to right, #38bdf8, #22d3ee); border-radius: 2px;">
+        <!-- Certifications -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-certificate"></i>Certifications</h2>
+          <div class="grid-2">
 
-        <div class="features">
-          <section>
-            <span class="icon solid major fa-solar-panel"></span>
-            <h3>Energy & Sustainability</h3>
-            <ul>
-              <li>Renewable Energy and Green Building Entrepreneurship – Duke University (Coursera)</li>
-              <li>Solar Energy Basics – The State University of New York (Coursera)</li>
-              <li>Energy Principles – University of Queensland (edX)</li>
-              <li>Grid-Tied PV Systems Design – SEI</li>
-              <li>Microgrid Design – TU Delft (edX)</li>
-            </ul>
-          </section>
-          <section>
-            <span class="icon solid major fa-brain"></span>
-            <h3>Data Science & Machine Learning</h3>
-            <ul>
-              <li>Machine Learning Specialization – Stanford University (Andrew Ng)</li>
-              <li>Applied Data Science with Python – University of Michigan</li>
-              <li>Python for Data Science and AI – IBM</li>
-              <li>Time Series Analysis – Johns Hopkins University</li>
-              <li>Probabilistic Load Forecasting – IEEE/NREL Workshops</li>
-            </ul>
-          </section>
+            <div class="card">
+              <div class="cert-group-title"><i class="fa-solid fa-leaf" style="margin-right:0.5rem;"></i>Energy &amp; Sustainability</div>
+              <ul class="cert-list">
+                <li>Renewable Energy and Green Building Entrepreneurship – Duke University (Coursera)</li>
+                <li>Solar Energy Basics – The State University of New York (Coursera)</li>
+                <li>Energy Principles – University of Queensland (edX)</li>
+                <li>Grid-Tied PV Systems Design – SEI</li>
+                <li>Microgrid Design – TU Delft (edX)</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="cert-group-title"><i class="fa-solid fa-brain" style="margin-right:0.5rem;"></i>Data Science &amp; Machine Learning</div>
+              <ul class="cert-list">
+                <li>Machine Learning Specialization – Stanford University (Andrew Ng)</li>
+                <li>Applied Data Science with Python – University of Michigan</li>
+                <li>Python for Data Science and AI – IBM</li>
+                <li>Time Series Analysis – Johns Hopkins University</li>
+                <li>Probabilistic Load Forecasting – IEEE/NREL Workshops</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
 
       </div>
-    </section>
+    </div>
 
   </div>
 
-  <!-- Footer -->
-  <footer id="footer" class="wrapper alt">
-    <div class="inner">
-      <ul class="menu">
-        <li>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</li>
-        <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-      </ul>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>

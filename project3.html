@@ -1,116 +1,183 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Project 3 - ML-Enhanced PV Energy System</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-  <style>
-    .center-img {
-      display: block;
-      margin: 2rem auto;
-      max-width: 75%;
-      border-radius: 10px;
-      border: 1px solid rgba(56,189,248,0.13);
-    }
-    ul li { margin-bottom: 0.5rem; }
-    h2 i, h3 i { color: #38bdf8; margin-right: 0.5rem; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Learning-Enhanced All-PV Blended Energy Systems | Kazi Zehad Mostofa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Portfolio CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
-<body class="is-preload">
+<body>
 
-  <!-- Header -->
-  <header id="header">
-    <a href="index.html" class="title">Project 3</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="generic.html">Education</a></li>
-        <li><a href="work.html">Work Experience</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-    <section id="main" class="wrapper">
-      <div class="inner">
-        <h1 class="major text-center"><i class="fas fa-solar-panel"></i> Machine Learning-Enhanced All-PV Blended Energy Systems</h1>
-
-        <div class="highlight-section">
-          <h3>Overview</h3>
-          <p>
-            This project investigates a full-surface photovoltaic building design that incorporates rooftop, vertical façade, and semitransparent BIPV modules, enhanced with machine learning for optimal energy yield prediction, intelligent sizing, and real-time monitoring. The system is tailored for energy-positive and low-carbon buildings in urban contexts.
-          </p>
-        </div>
-
-        <h2><i class="fas fa-bolt"></i> Problem Statement</h2>
-        <p>Building-integrated photovoltaics (BIPV) have immense potential but are underutilized due to complexity in modeling and integration. Existing PV systems often ignore vertical or transparent surfaces, limiting total solar capture. Our research proposes a blended PV model with intelligent control to utilize the full envelope of the building.</p>
-
-        <h2><i class="fas fa-layer-group"></i> Proposed System Architecture</h2>
-        <p>The architecture includes three types of PV integration: conventional rooftop panels, vertical wall-mounted PV, and semitransparent window-integrated PV. The energy generation is managed through a hybrid DC/AC inverter setup supporting bi-directional metering.</p>
-        <img src="images/pv_schematic.png" alt="PV System Schematic" class="center-img" />
-
-        <h2><i class="fas fa-brain"></i> Machine Learning Framework</h2>
-        <p>The prediction model uses supervised regression (SVR, RF) trained on irradiance, orientation, and time-of-day data to forecast hourly generation. HOMER Pro simulations complement the ML models for optimal component sizing and layout planning.</p>
-        <img src="images/ml_architecture.jpg" alt="Machine Learning Architecture" class="center-img" />
-
-        <h3><i class="fas fa-wifi"></i> IoT-Based Real-Time Monitoring</h3>
-        <p>The PV system is integrated with an IoT framework using ThingSpeak for data visualization. Voltage, current, temperature, and irradiance are recorded in real-time to aid predictive maintenance and performance validation.</p>
-        <img src="images/thingspeak_dashboard.png" alt="ThingSpeak Dashboard" class="center-img" />
-
-        <h2><i class="fas fa-project-diagram"></i> Electrical Layout & Grid Connection</h2>
-        <p>The proposed electrical layout uses smart inverters, load balancers, and hybrid grid-interactive design. Both DC and AC buses are managed through energy management controllers.</p>
-        <img src="images/simulation_layout.png" alt="Hybrid PV Layout" class="center-img" />
-
-        <h2><i class="fas fa-city"></i> Performance Comparison Across Cities</h2>
-        <p>The simulation was performed for multiple cities across varied climate zones. Results indicate that the blended PV model outperforms single-surface PV systems by up to 28% in annual yield while enhancing daylight penetration indoors via semitransparent layers.</p>
-        <img src="images/city_comparison.png" alt="City Comparison" class="center-img" />
-        <p><strong>Analysis:</strong> The energy yield advantage of blended PV was most significant in cities with high vertical irradiance such as Los Angeles and Kuala Lumpur. Locations with less horizontal roof area benefited more from vertical PV integration. Seasonal performance showed stability even during winter, confirming system adaptability. ML-based predictions aligned closely with simulation outputs, yielding a mean absolute error below 7% across the dataset.</p>
-
-        <h2><i class="fas fa-trophy"></i> Key Highlights</h2>
-        <ul>
-          <li>Achieved 78% energy self-sufficiency in optimized deployments</li>
-          <li>30% reduced carbon footprint across modeled regions</li>
-          <li>Enhanced facade usability with transparent PV glass</li>
-          <li>Live predictive analytics through cloud-connected dashboard</li>
-        </ul>
-
-        <h2><i class="fas fa-lightbulb"></i> Conclusion</h2>
-        <p>This research introduces a scalable all-PV envelope for buildings that leverages AI, simulation, and IoT technologies. The proposed system is adaptable to various urban contexts and supports zero-energy building targets.</p>
-
-        <h2><i class="fas fa-book"></i> Publication</h2>
-        <p><strong>Title:</strong> Machine learning-enhanced all-photovoltaic blended systems for energy-efficient sustainable buildings<br />
-        <strong>Journal:</strong> Cleaner Energy Systems, Elsevier<br />
-        <strong>DOI:</strong> <a href="https://doi.org/10.1016/j.cles.2024.100180" target="_blank">10.1016/j.cles.2024.100180</a><br />
-        <strong>Authors:</strong> Mostofa, K. Z., Islam, M. A., & others (2024)</p>
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Kazi Zehad Mostofa</a>
+      <div class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
       </div>
-    </section>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#contact">Contact</a>
   </div>
 
-  <!-- Footer -->
-  <footer id="footer" class="wrapper alt">
-    <div class="inner">
-      <ul class="menu">
-        <li>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
+  <div class="page-wrapper">
+
+    <div class="project-hero">
+      <div class="container">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+        <span class="project-hero-tag">Sustainable Buildings</span>
+        <h1>Machine Learning-Enhanced All-PV Blended Energy Systems</h1>
+        <p class="project-hero-tagline">Rooftop, vertical facade, and semitransparent BIPV with ML-powered energy yield prediction and IoT monitoring</p>
+        <div class="pills-row">
+          <span class="pill">BIPV</span>
+          <span class="pill">SVR / Random Forest</span>
+          <span class="pill">HOMER Pro</span>
+          <span class="pill">78% Self-Sufficiency</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="container">
+
+        <!-- Overview -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-circle-info"></i>Overview</h2>
+          <p>This project investigates a full-surface photovoltaic building design that incorporates rooftop, vertical façade, and semitransparent BIPV modules, enhanced with machine learning for optimal energy yield prediction, intelligent sizing, and real-time monitoring. The system is tailored for energy-positive and low-carbon buildings in urban contexts.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/pv_schematic.png" alt="PV Schematic" />
+          </div>
+        </div>
+
+        <!-- Problem Statement -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-triangle-exclamation"></i>Problem Statement</h2>
+          <p>Building-integrated photovoltaics (BIPV) have immense potential but are underutilized due to complexity in modeling and integration. Existing PV systems often ignore vertical or transparent surfaces, limiting total solar capture. Our research proposes a blended PV model with intelligent control to utilize the full envelope of the building.</p>
+        </div>
+
+        <!-- Proposed System Architecture -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-network-wired"></i>Proposed System Architecture</h2>
+          <p>The architecture includes three types of PV integration: conventional rooftop panels, vertical wall-mounted PV, and semitransparent window-integrated PV. The energy generation is managed through a hybrid DC/AC inverter setup supporting bi-directional metering.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/simulation_layout.png" alt="Simulation Layout" />
+          </div>
+        </div>
+
+        <!-- Machine Learning Framework -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-brain"></i>Machine Learning Framework</h2>
+          <p>The prediction model uses supervised regression (SVR, RF) trained on irradiance, orientation, and time-of-day data to forecast hourly generation. HOMER Pro simulations complement the ML models for optimal component sizing and layout planning.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/ml_architecture.jpg" alt="ML Architecture" />
+          </div>
+        </div>
+
+        <!-- IoT-Based Real-Time Monitoring -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-wifi"></i>IoT-Based Real-Time Monitoring</h2>
+          <p>The PV system is integrated with an IoT framework using ThingSpeak for data visualization. Voltage, current, temperature, and irradiance are recorded in real-time to aid predictive maintenance and performance validation.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/thingspeak_dashboard.png" alt="ThingSpeak Dashboard" />
+          </div>
+        </div>
+
+        <!-- Electrical Layout -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-bolt"></i>Electrical Layout</h2>
+          <p>The proposed electrical layout uses smart inverters, load balancers, and hybrid grid-interactive design. Both DC and AC buses are managed through energy management controllers.</p>
+        </div>
+
+        <!-- Performance Comparison -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-chart-bar"></i>Performance Comparison</h2>
+          <p>The simulation was performed for multiple cities across varied climate zones. Results indicate that the blended PV model outperforms single-surface PV systems by up to 28% in annual yield while enhancing daylight penetration indoors via semitransparent layers.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/city_comparison.png" alt="City Comparison Results" />
+          </div>
+        </div>
+
+        <!-- Analysis -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-magnifying-glass-chart"></i>Analysis</h2>
+          <p>The energy yield advantage of blended PV was most significant in cities with high vertical irradiance such as Los Angeles and Kuala Lumpur. Locations with less horizontal roof area benefited more from vertical PV integration. Seasonal performance showed stability even during winter, confirming system adaptability. ML-based predictions aligned closely with simulation outputs, yielding a mean absolute error below 7% across the dataset.</p>
+        </div>
+
+        <!-- Key Highlights -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-star"></i>Key Highlights</h2>
+          <div class="grid-2">
+            <div class="card">
+              <ul class="cert-list">
+                <li>Achieved 78% energy self-sufficiency in optimized deployments</li>
+                <li>30% reduced carbon footprint across modeled regions</li>
+              </ul>
+            </div>
+            <div class="card">
+              <ul class="cert-list">
+                <li>Enhanced facade usability with transparent PV glass</li>
+                <li>Live predictive analytics through cloud-connected dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-flag-checkered"></i>Conclusion</h2>
+          <p>This research introduces a scalable all-PV envelope for buildings that leverages AI, simulation, and IoT technologies. The proposed system is adaptable to various urban contexts and supports zero-energy building targets.</p>
+        </div>
+
+        <!-- Publication -->
+        <div class="project-section fade-in">
+          <div class="pub-box">
+            <h4>Publication</h4>
+            <p>"Machine learning-enhanced all-photovoltaic blended systems for energy-efficient sustainable buildings"</p>
+            <p style="margin-top:0.4rem;">Cleaner Energy Systems, Elsevier</p>
+            <p style="margin-top:0.4rem;">DOI: <a href="https://doi.org/10.1016/j.cles.2024.100180" target="_blank" rel="noopener noreferrer">10.1016/j.cles.2024.100180</a></p>
+            <p style="margin-top:0.4rem;"><strong>Authors:</strong> Mostofa, K. Z., Islam, M. A., &amp; others (2024)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>

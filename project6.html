@@ -1,138 +1,196 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Project 6 - On-Grid PV Microgrid Design with Battery Storage Backup</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Connected PV Microgrid Design with Battery Storage Backup | Kazi Zehad Mostofa</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    h2 { display: flex; align-items: center; gap: 10px; }
-    h2 i { color: #38bdf8 !important; }
-    figcaption { font-size: 0.9em; }
-    ul li { margin-bottom: 8px; }
-  </style>
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <!-- Portfolio CSS -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
 </head>
-<body class="is-preload">
+<body>
 
-<!-- Header -->
-<header id="header">
-  <a href="index.html" class="title">Project 6</a>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="generic.html">Education</a></li>
-      <li><a href="work.html">Work Experience</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- Wrapper -->
-<div id="wrapper">
-  <section id="main" class="wrapper">
-    <div class="inner">
-      <h1 class="major">Grid Connected PV Microgrid Design with Battery Storage Backup</h1>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-solar-panel"></i> Introduction</h2>
-        <p>This project explores the integration of solar photovoltaic (PV) and energy storage systems to build a resilient, grid-connected microgrid. It aims to reduce dependence on fossil fuels, mitigate grid outages, and enhance energy security in institutions such as schools and small commercial complexes.</p>
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Kazi Zehad Mostofa</a>
+      <div class="nav-links">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#contact">Contact</a>
       </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-network-wired"></i> System Design and Architecture</h2>
-        <p>The microgrid utilizes 132 SunPower SPR-X-21-345 PV modules with a total capacity of 45 kW, and a battery bank composed of 390 batteries rated at 48V and 10Ah. The dual-mode system ensures seamless transition between solar and battery-powered operation, managed through a PSCAD-modeled smart controller for power dispatch optimization.</p>
-        <figure style="text-align: center;">
-          <img src="images/p6_microgrid_diagram.png" class="img-3d" alt="Microgrid System Design" style="max-width: 70%; height: auto;" />
-          <figcaption><em>Figure 1:</em> Architecture with PV, battery, converters, and load.</figcaption>
-        </figure>
-      </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-bolt"></i> Converter Design and Control</h2>
-        <p>The converter system includes:</p>
-        <ul>
-          <li> Boost Converter: Steps up PV voltage to stabilize the DC bus and reduce mismatch losses.</li>
-          <li> Buck-Boost Converter: Charges/discharges batteries based on SOC and demand profile.</li>
-          <li> Active Rectifier: Provides grid-synchronized three-phase AC power with minimal harmonic distortion.</li>
-        </ul>
-        <p>Bode plot analysis demonstrates robust loop stability across the operating spectrum.</p>
-        <figure style="text-align: center;">
-          <img src="images/p6_bode_boost.png" class="img-3d" alt="Boost Converter Bode Plot" style="max-width: 70%; height: auto;" />
-          <figcaption><em>Figure 2:</em> Stable frequency response for boost converter.</figcaption>
-        </figure>
-      </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-battery-full"></i> Battery Storage Strategy</h2>
-        <p>The battery system stores up to 140 kWh of energy, supporting up to 12 hours of off-grid operation. Charging is prioritized during peak solar periods and discharging is optimized for night-time use and peak shaving. Battery degradation models were also considered to ensure long-term reliability.</p>
-        <figure style="text-align: center;">
-          <img src="images/p6_battery_soc.png" class="img-3d" alt="Battery State of Charge" style="max-width: 70%; height: auto;" />
-          <figcaption><em>Figure 3:</em> SOC profile for a 24-hour cycle.</figcaption>
-        </figure>
-      </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-chart-line"></i> Simulation Results and Analysis</h2>
-        <p>The system's real-time performance was simulated under varying solar irradiance and load conditions. Results show:</p>
-        <ul>
-          <li> Daytime: Solar generation meets base load and charges batteries.</li>
-          <li> Nighttime: Battery discharges to meet load demand.</li>
-          <li> Overload Conditions: Combined battery and PV output maintains supply.</li>
-        </ul>
-        <p>Voltage and power flow graphs confirm efficient load sharing and power quality maintenance.</p>
-        <figure style="text-align: center;">
-          <img src="images/p6_power_flow_plot.png" class="img-3d" alt="Power Flow Plot" style="max-width: 70%; height: auto;" />
-          <figcaption><em>Figure 4:</em> Real-time power dynamics.</figcaption>
-        </figure>
-        <figure style="text-align: center;">
-          <img src="images/p6_inverter_output.png" class="img-3d" alt="Inverter Output" style="max-width: 70%; height: auto;" />
-          <figcaption><em>Figure 5:</em> Stable 3-phase AC voltage waveform.</figcaption>
-        </figure>
-      </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-dollar-sign"></i> Economic Assessment</h2>
-        <p>The system was evaluated financially based on installation, operational savings, and ROI. Key highlights:</p>
-        <ul>
-          <li> Total System Cost: $118,000</li>
-          <li> Estimated Annual Savings: $26,981.32</li>
-          <li> Payback Period: 4.37 years</li>
-          <li> Return on Investment (ROI): 22.88%</li>
-        </ul>
-        <p>This makes the project a viable investment, especially with government incentives and green energy subsidies.</p>
-      </div>
-
-      <div class="card-3d">
-        <h2><i class="fas fa-flag-checkered"></i> Conclusion</h2>
-        <p>This PV-battery hybrid system demonstrates a scalable, efficient, and cost-effective solution for distributed renewable energy deployment. Its modular design, smart control, and financial viability make it ideal for schools, rural healthcare centers, and smart city pilot zones in developing regions.</p>
-      </div>
-
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </section>
-</div>
-
-<!-- Footer -->
-<footer id="footer" class="wrapper alt">
-  <div class="inner">
-    <ul class="menu">
-      <li>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</li>
-      <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-    </ul>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#education">Education</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="index.html#research">Research</a>
+    <a href="index.html#contact">Contact</a>
   </div>
-</footer>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+  <div class="page-wrapper">
 
+    <div class="project-hero">
+      <div class="container">
+        <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
+        <span class="project-hero-tag">Microgrid</span>
+        <h1>Grid Connected PV Microgrid Design with Battery Storage Backup</h1>
+        <p class="project-hero-tagline">PSCAD-modeled 45 kW PV microgrid with 140 kWh battery storage — ROI of 22.88% with 4.37-year payback</p>
+        <div class="pills-row">
+          <span class="pill">PSCAD Simulation</span>
+          <span class="pill">45 kW PV</span>
+          <span class="pill">140 kWh BESS</span>
+          <span class="pill">22.88% ROI</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-content">
+      <div class="container">
+
+        <!-- Introduction -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-circle-info"></i>Introduction</h2>
+          <p>This project explores the integration of solar photovoltaic (PV) and energy storage systems to build a resilient, grid-connected microgrid. It aims to reduce dependence on fossil fuels, mitigate grid outages, and enhance energy security in institutions such as schools and small commercial complexes.</p>
+        </div>
+
+        <!-- System Design -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-network-wired"></i>System Design</h2>
+          <p>The microgrid utilizes 132 SunPower SPR-X-21-345 PV modules with a total capacity of 45 kW, and a battery bank composed of 390 batteries rated at 48V and 10Ah. The dual-mode system ensures seamless transition between solar and battery-powered operation, managed through a PSCAD-modeled smart controller for power dispatch optimization.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/p6_microgrid_diagram.png" alt="Microgrid Architecture Diagram" />
+            <div class="figure-caption">Figure 1. Architecture with PV, battery, converters, and load.</div>
+          </div>
+        </div>
+
+        <!-- Converter Design -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-microchip"></i>Converter Design</h2>
+          <p>The converter system includes:</p>
+          <div class="grid-3" style="margin:1rem 0;">
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Boost Converter</h4>
+              <p style="font-size:0.9rem;">Steps up PV voltage to stabilize the DC bus and reduce mismatch losses.</p>
+            </div>
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Buck-Boost Converter</h4>
+              <p style="font-size:0.9rem;">Charges/discharges batteries based on SOC and demand profile.</p>
+            </div>
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Active Rectifier</h4>
+              <p style="font-size:0.9rem;">Provides grid-synchronized three-phase AC power with minimal harmonic distortion.</p>
+            </div>
+          </div>
+          <p>Bode plot analysis demonstrates robust loop stability across the operating spectrum.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/p6_bode_boost.png" alt="Bode Plot for Boost Converter" />
+            <div class="figure-caption">Figure 2. Stable frequency response for boost converter.</div>
+          </div>
+        </div>
+
+        <!-- Battery Storage -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-battery-full"></i>Battery Storage</h2>
+          <p>The battery system stores up to 140 kWh of energy, supporting up to 12 hours of off-grid operation. Charging is prioritized during peak solar periods and discharging is optimized for night-time use and peak shaving. Battery degradation models were also considered to ensure long-term reliability.</p>
+          <div class="figure-wrapper" style="margin-top:1.5rem;">
+            <img src="images/p6_battery_soc.png" alt="Battery SOC Profile" />
+            <div class="figure-caption">Figure 3. SOC profile for a 24-hour cycle.</div>
+          </div>
+        </div>
+
+        <!-- Simulation Results -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-chart-bar"></i>Simulation Results</h2>
+          <p>The system's real-time performance was simulated under varying solar irradiance and load conditions. Results show:</p>
+          <div class="grid-3" style="margin:1rem 0;">
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Daytime</h4>
+              <p style="font-size:0.9rem;">Solar generation meets base load and charges batteries.</p>
+            </div>
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Nighttime</h4>
+              <p style="font-size:0.9rem;">Battery discharges to meet load demand.</p>
+            </div>
+            <div class="card">
+              <h4 style="color:var(--accent);font-family:var(--font-heading);margin-bottom:0.5rem;">Overload Conditions</h4>
+              <p style="font-size:0.9rem;">Combined battery and PV output maintains supply.</p>
+            </div>
+          </div>
+          <p>Voltage and power flow graphs confirm efficient load sharing and power quality maintenance.</p>
+          <div class="grid-2" style="margin-top:1.5rem;">
+            <div class="figure-wrapper">
+              <img src="images/p6_power_flow_plot.png" alt="Real-time Power Dynamics" />
+              <div class="figure-caption">Figure 4. Real-time power dynamics.</div>
+            </div>
+            <div class="figure-wrapper">
+              <img src="images/p6_inverter_output.png" alt="3-Phase AC Voltage Waveform" />
+              <div class="figure-caption">Figure 5. Stable 3-phase AC voltage waveform.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Economic Assessment -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-dollar-sign"></i>Economic Assessment</h2>
+          <div class="kpi-grid" style="grid-template-columns:repeat(2,1fr);">
+            <div class="kpi-card">
+              <div class="kpi-label">Total System Cost</div>
+              <div class="kpi-value">$118K</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Annual Savings</div>
+              <div class="kpi-value">$26,981</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Payback Period</div>
+              <div class="kpi-value">4.37 yr</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">ROI</div>
+              <div class="kpi-value">22.88%</div>
+            </div>
+          </div>
+          <p style="margin-top:1rem;">This makes the project a viable investment, especially with government incentives and green energy subsidies.</p>
+        </div>
+
+        <!-- Conclusion -->
+        <div class="project-section fade-in">
+          <h2 class="project-section-title"><i class="fa-solid fa-flag-checkered"></i>Conclusion</h2>
+          <p>This PV-battery hybrid system demonstrates a scalable, efficient, and cost-effective solution for distributed renewable energy deployment. Its modular design, smart control, and financial viability make it ideal for schools, rural healthcare centers, and smart city pilot zones in developing regions.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kazi Zehad Mostofa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>
